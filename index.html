@@ -33,6 +33,7 @@
                     <input id="rent-field" type="text" class="form-control bg-orange-200 p-3 h-10 w-3/5 rounded-md">
                     <p class="pt-2 text-lg font-medium">Clothes:</p>
                     <input id="cloth-field" type="text" class="form-control bg-orange-200 p-3 h-10 w-3/5 rounded-md">
+                    <p id="expenses-message" class="text-2xl text-red-500 hidden">Any input cannot be a string or negative Number! </p>
                 </div>
                 <div class="calculate-button py-5">
                     <button id="calculate-button" type="button" class="font-semibold text-white px-10 py-2 bg-lime-500 rounded-lg">Calculate</button>
@@ -45,7 +46,7 @@
                     <p class="pt-2 text-lg font-medium">save:</p>
                     <input id="save-field" type="text" class="form-control bg-orange-200 p-3 h-10 w-3/5 rounded-md">
                     <span class="font-semibold">%</span>
-                    <p id="saving-message" class="text-2xl text-red-500 hidden">Savings cannot be greater than balance! </p>
+                    <p id="saving-message" class="text-2xl text-red-500 hidden">Savings cannot be negative or string or greater than balance!</p>
                 </div>
                 <div class="save-button py-5">
                     <button id="save-button" type="button" class="font-semibold text-white px-10 py-2 bg-lime-500 rounded-lg">Save</button>
