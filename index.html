@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living-Cost-Plan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <div class="title">
+            <img src="./images/money.png" alt="money-emoji" class="mx-auto">
+            <h1 class="text-3xl font-semibold text-orange-600 text-center">Living-Cost-Plan</h1>
+        </div>
+        <div class="body grid grid-cols-1 md:grid-cols-2 p-10 gap-5">
+            <div class="image">
+                <img src="./images/money-bg.png" alt="">
+            </div>
+            <div class="calculator text-center">
+                <div class="income py-5">
+                    <h3 class="font-medium text-2xl">Income (BDT)</h3>
+                    <p class="pt-5 text-lg font-medium">Income:</p>
+                    <input id="income-field" type="text" class="form-control bg-orange-200 p-3 h-10 w-3/5 rounded-md">
+                </div>
+                <div class="expenses py-5">
+                    <h3 class="font-medium text-2xl text-center">Expenses (BDT)</h3>
+                    <p class="pt-5 text-lg font-medium">Food:</p>
+                    <input id="food-field" type="text" class="form-control bg-orange-200 p-3 h-10 w-3/5 rounded-md">
+                    <p class="pt-2 text-lg font-medium">Rent:</p>
+                    <input id="rent-field" type="text" class="form-control bg-orange-200 p-3 h-10 w-3/5 rounded-md">
+                    <p class="pt-2 text-lg font-medium">Clothes:</p>
+                    <input id="cloth-field" type="text" class="form-control bg-orange-200 p-3 h-10 w-3/5 rounded-md">
+                </div>
+                <div class="calculate-button py-5">
+                    <button id="calculate-button" type="button" class="font-semibold text-white px-10 py-2 bg-lime-500 rounded-lg">Calculate</button>
+                </div>
+                <div class="initial-balance py-5">
+                    <h2 class="font-medium text-2xl text-center py-2">Total Expenses: <span>000</span> (BDT)</h2>
+                    <h2 class="font-medium text-2xl text-center py-2">Balance: <span>000</span> (BDT)</h2>
+                </div>
+                <div class="save">
+                    <p class="pt-2 text-lg font-medium">save:</p>
+                    <input id="save-field" type="text" class="form-control bg-orange-200 p-3 h-10 w-3/5 rounded-md">
+                    <span class="font-semibold">%</span>
+                </div>
+                <div class="save-button py-5">
+                    <button id="save-button" type="button" class="font-semibold text-white px-10 py-2 bg-lime-500 rounded-lg">Save</button>
+                </div>
+                <div class="final-balance py-5">
+                    <h2 class="font-medium text-2xl text-center py-2">Saving Amount: <span>000</span> (BDT)</h2>
+                    <h2 class="font-medium text-2xl text-center py-2">Remaining Balance: <span>000</span> (BDT)</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
