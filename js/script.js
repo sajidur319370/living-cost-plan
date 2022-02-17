@@ -29,6 +29,19 @@ function calculateExpenses() {
 
 // calculate savings and remaining balance
 function calculateSavings() {
-    savingAmount.innerText = parseInt(incomeField.value) * parseInt(saveField.value) * 0.01;
-    remainingBalance.innerText = parseInt(balance.innerText) - parseInt(savingAmount.innerText);
+    const saving = parseInt(incomeField.value) * parseInt(saveField.value) * 0.01;
+    const initialBalance = parseInt(balance.innerText);
+    const savingAlert = document.getElementById('saving-message');
+    if (saving > initialBalance) {
+        savingAlert.classList.remove('hidden');
+        savingAlert.classList.add('block');
+        savingAmount.innerText = '0';
+        remainingBalance.innerText = '0'
+    } else {
+        savingAlert.classList.remove('block');
+        savingAlert.classList.add('hidden');
+        savingAmount.innerText = saving;
+        remainingBalance.innerText = initialBalance - saving;
+    }
+
 }
